@@ -9,13 +9,15 @@
     - Se o preço for acima de R$ 1.500, a viagem será paga em 10 parcelas.
     Considerando o preço da viagem informado pelo usuário, apresente o valor de cada parcela a ser paga.
     */
+    const preços = Number(prompt("qual o custo total da viagem que deseja realizar"));
 
-    //Entrada
+    let valorParcela = 0;
+    (preços <= 500) ? valorParcela = preços / 1
+    : (preços <= 1000) ? valorParcela = preços / 2
+    : (preços <= 1500) ? valorParcela = preços / 4
+    : valorParcela = preços / 10;
 
+    document.write(`o valor de cada parcela é ${valorParcela}`)
 
-    //Processamento
-
-
-    //Saída
 
 </script>

@@ -8,13 +8,13 @@
     - Se a distância percorrida for acima de 100 km, o preço do km terá um acréscimo de 25%.
     Baseando-se na resposta do usuário, calcule o custo total da distância percorrida para realizar a entrega.
     */
+    const distanciaTotal = Number(prompt("qual a distancia total percorrida pelo intreador"));
 
-    //Entrada
+    let preços = 0;
 
+    (distanciaTotal <= 50) ? preços = distanciaTotal / 1
+    : (distanciaTotal <= 100) ? preços = distanciaTotal + (distanciaTotal * 0.15)
+    : preços = distanciaTotal  * 0.25 
 
-    //Processamento
-
-
-    //Saída
-
+    document.write(`a distancia percorrida é ${preços}`)
 </script>
