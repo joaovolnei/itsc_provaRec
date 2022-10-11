@@ -9,32 +9,25 @@
     Caso seja Araquari (AR), o programa mostrará a mensagem "Metrópole".
     Caso seja Balneário Barra do Sul (BS), o programa mostrará a mensagem "Praia".
     */
-     
+
     const cidade = prompt("me informe a cidade que nasceu: Joinville[JL] | São Fransisco do Sul [SF] | Araquari [AR] balneario Barra do Sul [BS] ").toUperCase();
-    
+
     switch (cidade) {
         case "JL":
-          alert("urbano")
+            alert("urbano")
             break
-            case "SF":
-                alert("praia")
-                break
-                case "AR":
-                    alert("metropole")
-                 case "BS":
-                    alert("praia")
-                break
-                default:
-                 cidade = 0;   
-                break
-
-    
-    } 
+        case "SF":
+            alert("praia")
+            break
+        case "AR":
+            alert("metropole")
+        case "BS":
+            alert("praia")
+            break
+        default:
+            cidade = 0;
+            break
 
 
-    if (cidade === 0) {
-        document.write(`local não valido`)
-    }else{
-        document.write(`a cidade que nasceu é ${cidade}`)
     }
 </script>
